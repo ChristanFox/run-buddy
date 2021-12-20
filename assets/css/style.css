@@ -2,6 +2,8 @@
     /*makes the background color flush against the edges of the page removing the white gap*/
     margin: 0;
     padding: 0;
+    /*without adjusting the "box-sizing" the <div> text in footer will continue off-screen*/
+    box-sizing: border-box;
 }
 body{
     font-family: Helvetica, Arial, sans-serif;
@@ -50,4 +52,30 @@ header nav ul li a{
     margin-right: 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+
+footer{
+    background: #fce138;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div{
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a{
+    color: #024e76;
 }
