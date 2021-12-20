@@ -1,10 +1,53 @@
-/* apply styles to <body>*/
+*{
+    /*makes the background color flush against the edges of the page removing the white gap*/
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
 }
-
-/* apply styles to <header>*/
 header{
-    padding: 20px 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #39a6b2;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    /*changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it*/
+    display: inline;
+}
+
+header a{
+    /*setting text-decoration to none removes the underline, strikethrough or overline from the <a> in <header>*/
+    text-decoration: none;
+    color: #fce138;
+}
+
+header nav{
+    /*float dictates where on the page the text will be positioned*/
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: lighter;
+    font-size: 22px;
 }
