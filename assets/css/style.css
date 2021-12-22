@@ -5,11 +5,11 @@
     /*without adjusting the "box-sizing" the <div> text in footer will continue off-screen*/
     box-sizing: border-box;
 }
-body{
+body {
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
 }
-header{
+header {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 35px;
@@ -17,7 +17,7 @@ header{
     background-color: #39a6b2;
 }
 
-header h1{
+header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -26,13 +26,13 @@ header h1{
     display: inline;
 }
 
-header a{
+header a {
     /*setting text-decoration to none removes the underline, strikethrough or overline from the <a> in <header>*/
     text-decoration: none;
     color: #fce138;
 }
 
-header nav{
+header nav {
     /*float dictates where on the page the text will be positioned*/
     float: right;
     margin-top: 7px;
@@ -41,11 +41,11 @@ header nav{
     margin-right: 0;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline;
 }
 
-header nav ul li a{
+header nav ul li a {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 30px;
@@ -55,7 +55,7 @@ header nav ul li a{
 }
 
 /*Hero Style Start*/
-.hero{
+.hero {
     background-image: url("../images/hero-bg.jpg");
     height: 600px;
     /*"background-size" and "background position are used to negate the clipping issue on the background image"*/
@@ -63,7 +63,7 @@ header nav ul li a{
     background-position: center;
     position: relative;
 }
-.hero-form{
+.hero-form {
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
@@ -76,17 +76,17 @@ header nav ul li a{
     right: 140px;
 
 }
-.hero form h3{
+.hero form h3 {
     font-size: 24px;
     margin: 0;
 }
-.hero-form p{
+.hero-form p {
     margin: 5px 0 15px 0;
 }
-.hero-form label{
+.hero-form label {
     margin: 0 5px;
 }
-.form-input{
+.form-input {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -95,7 +95,7 @@ header nav ul li a{
     width: 100%;
     margin-bottom: 15px;
 }
-.hero-form button{
+.hero-form button {
     color: #fce138;
     background-color: #024e76;
     border: none;
@@ -104,21 +104,29 @@ header nav ul li a{
 }
 /*Hero Style End*/
 
-/*What we do style begins*/
-.intro{
-    text-align: center;
+
+.primary-border {
+   border-color: #fce138;    
 }
-.intro h2{
+.secondary-border {
+    border-color: #39a6b2;
+}
+.section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
+    border-bottom: 3px solid; 
     /*set "display" to "inline block" to shorten the line above "What we do"*/
     display: inline-block;
 }
-.intro p{
+
+
+/*WHAT WE DO STYLE BEGINS*/
+.intro {
+    text-align: center;
+}
+.intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
@@ -127,36 +135,63 @@ header nav ul li a{
     margin: 0 auto;
 }
 
-/*What we do style ends*/
+/*WHAT WE DO STYLE ENDS*/
+
+/*WHAT YOU DO STYLE BEGINS*/
+.steps {
+    text-align: center;
+    background: #fce138;
+}
+.steps div {
+    margin-bottom: 80px;
+}
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+.steps span {
+    font-size: 38px;
+}
+
+/*WHAT YOU DO STYLE ENDS*/
 
 
-section{
+section {
     padding: 60px;
 }
 
-footer{
+footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
 }
 
-footer h2{
+footer h2 {
     display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
-footer div{
+footer div {
     float: right;
     line-height: 1.5;
     text-align: right;
 }
 
-footer a{
+footer a {
     color: #024e76;
 }
-.red{
+.red {
     color: red;
 }
 
