@@ -104,6 +104,32 @@ header nav ul li a{
 }
 /*Hero Style End*/
 
+/*What we do style begins*/
+.intro{
+    text-align: center;
+}
+.intro h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: #fce138;
+    /*set "display" to "inline block" to shorten the line above "What we do"*/
+    display: inline-block;
+}
+.intro p{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    /*to center a block element less than 100% width set the "margin" to "0" "auto"*/
+    margin: 0 auto;
+}
+
+/*What we do style ends*/
+
+
 section{
     padding: 60px;
 }
@@ -133,3 +159,4 @@ footer a{
 .red{
     color: red;
 }
+
