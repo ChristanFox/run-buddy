@@ -319,33 +319,70 @@ header nav ul li a {
     text-align: center;*/
     background: #024e76;
 }
+.contact-info {/*flexbox update*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info>* { /*flexbox update starts*/
+    /*(Info)
+    the * selector is saying "select all elements that are direct children of anything with a class of contact-info." 
+    The > symbol means it's looking specifically for direct children of the element listed first. 
+    Remember, however, that CSS reads right to left. This means that if the first selector it reads is *, 
+    it will try and find every element on the page first, then look at the .contact-info, and then filter out the elements that aren't a direct child of it. 
+    This wouldn't be a good approach in a big website, but it won't affect performance for a site this size.*/
+    flex: 1;
+    margin: 15px;
+} /*flexbox update ends*/
 .contact h2 {
     color: #fce138;
 }
-.contact-info iframe {
-    width: 400px;
+.contact-info iframe { 
+    /*(Obsolete with flexbox) 
+    width: 400px;*/
     height: 400px;
 }
 .contact-info div {
+    /*(Obsolete with flexbox)
     width: 410px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 30px 0 0 60px;
+    margin: 30px 0 0 60px;*/
     color: white;
 }
 .contact-info h3 {
     color: #fce138;
     font-size: 32px;
 }
-.contact-info p, .contact-info address {
+.contact-info p, .contact-info address { /*flexbox update (font-size changed from 20px to 16px)*/
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
 }
 .contact-info a {
     color: #fce138;
+}
+/*flexbox update starts*/
+.contact-form input, .contact-form textarea { 
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
 }
 /*REACH OUT STYLE ENDS*/
 section {
