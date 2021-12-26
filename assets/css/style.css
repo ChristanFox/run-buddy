@@ -150,18 +150,21 @@ header nav ul li a {
 .section-title {
     font-size: 55px;
     color: #024e76;
+    border-bottom: 3px solid;
+    /*(Obsolete with flexbox)
     margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid; 
-    /*set "display" to "inline block" to shorten the line above "What we do"*/
-    display: inline-block;
+    padding: 0 100px 20px 100px; 
+    /*set "display" to "inline block" to shorten the line above "What we do"
+    display: inline-block;*/
 }
 
 
 /*WHAT WE DO STYLE BEGINS*/
+
+/*(Obsolete with flexbox)
 .intro {
     text-align: center;
-}
+}*/
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -169,13 +172,17 @@ header nav ul li a {
     font-size: 20px;
     /*to center a block element less than 100% width set the "margin" to "0" "auto"*/
     margin: 0 auto;
+    /*flexbox update begins*/
+    text-align: center;
+    /*flexbox update ends*/
 }
 
 /*WHAT WE DO STYLE ENDS*/
 
 /*WHAT YOU DO STYLE BEGINS*/
 .steps {
-    text-align: center;
+    /*(Obsolete with flexbox)
+    text-align: center;*/
     background: #fce138;
 }
 .steps div {
@@ -204,20 +211,22 @@ header nav ul li a {
     border-bottom: 3px solid;
     margin-bottom: 35px;
     color: #024e76;
+    /*flexbox update begins*/
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    /*flexbox update ends*/
 }
 /*WHAT YOU DO STYLE ENDS*/
 
 
 /*MEET THE TRAINERS STYLE BEGINS*/
 .trainers {
-    text-align: center;
+    /*(Obsolete with flexbox)
+    text-align: center;*/
 }
-.text-left {
-    text-align: left;
-}
-.text-right {
-    text-align: right;
-}
+
 .trainer {
     /*We don't want the content to span the full width of the page because it will run a little too long, so we've given it a set width value of 900px.*/
     width: 900px;
@@ -256,7 +265,8 @@ header nav ul li a {
 
 /*REACH OUT STYLE BEGINS*/
 .contact {
-    text-align: center;
+    /*(Obsolete with flexbox)
+    text-align: center;*/
     background: #024e76;
 }
 .contact h2 {
@@ -323,4 +333,14 @@ footer a {
 .red {
     color: red;
 }
-
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/*flexbox update begins*/
+.flex-row {
+    display: flex;
+}
+/*flexbox update ends*/
