@@ -15,6 +15,10 @@ header {
     padding-left: 35px;
     padding-right: 35px;
     background-color: #39a6b2;
+    /*flexbox update*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -22,8 +26,8 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    /*changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it*/
-    display: inline;
+    /*changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
+    display: inline; (Obsolete with flexbox)*/
 }
 
 header a {
@@ -33,12 +37,9 @@ header a {
 }
 
 header nav {
-    /*float dictates where on the page the text will be positioned*/
-    float: right;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 0;
-    margin-right: 0;
+    /*float dictates where on the page the text will be positioned
+    float: right; (Obsoloete with flexbox)*/
+    margin: 7px 0;
 }
 
 header nav ul li {
