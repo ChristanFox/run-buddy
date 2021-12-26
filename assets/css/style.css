@@ -15,11 +15,10 @@ header {
     padding-left: 35px;
     padding-right: 35px;
     background-color: #39a6b2;
-    /*flexbox update*/
+    /*flexbox update begins*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*flexbox update ends*/
 }
 
 header h1 {
@@ -27,7 +26,8 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    /*(Obsolete with flexbox)changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
+    /*(Obsolete with flexbox)
+    changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
     display: inline; */
 }
 
@@ -38,12 +38,13 @@ header a {
 }
 
 header nav {
-    /*(Obsoloete with flexbox)float dictates where on the page the text will be positioned
+    /*(Obsoloete with flexbox)
+    float dictates where on the page the text will be positioned
     float: right; */
     margin: 7px 0;
 }
 
-/*flexbox update*/
+/*flexbox update begins*/
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +53,8 @@ header nav ul {
     list-style: none;
 } /*flexbox update ends*/
 
-/*(obsolete with flexbox)header nav ul li {
+/*(obsolete with flexbox)
+header nav ul li {
     display: inline;
 } */
 
@@ -66,24 +68,49 @@ header nav ul li a {
 /*Hero Style Start*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     /*"background-size" and "background position are used to negate the clipping issue on the background image"*/
     background-size: cover;
     background-position: center;
+    /*flexbox update begins*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*flexbox update ends*/
+    /*(Obsolete with flexbox)
     position: relative;
+    height: 600px;*/
 }
+/*flexbox update begins*/
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
+/*flexbox update ends*/
 .hero-form {
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
+    /*flexbox update begins*/
+    width: 40%;
+    margin: 3.5%;
+    /*flexbox update ends*/
+    /*(Obsolete with flexbox)
+    width: 500px;
     position: absolute;
     bottom: 120px;
-    right: 140px;
-
+    right: 140px;*/
 }
 .hero form h3 {
     font-size: 24px;
@@ -269,17 +296,23 @@ footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+    /*flexbox update begins*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
+    /*(Obsolete with flexbox)
+    display: inline;*/
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
+    /*(Obsolete with flexbox)
+    float: right;*/
     line-height: 1.5;
     text-align: right;
 }
