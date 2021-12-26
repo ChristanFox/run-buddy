@@ -180,11 +180,46 @@ header nav ul li a {
 /*WHAT WE DO STYLE ENDS*/
 
 /*WHAT YOU DO STYLE BEGINS*/
+
+/*flexbox update begins*/
+.step {
+    margin: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-img { /*without this step, CSS will refuse to render the images*/
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-img img {
+    max-width: 100%;
+}
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*(info)
+    Now the child elements have a flex-grow property of 1 and 12, respectively. 
+    This means that .step-text will be allotted 12 times more unused space than .step-img, but .step-img at the very least must be 12 percent of the width of .step-info.*/
+}
+.step-text {/*Steps with less text have a bigger image. This is because there's only one child with the flex property, so it's ignoring the needs of the other child.
+    adding this element fixes the issue*/
+    flex: 12;
+}
+/*flexbox update ends*/
+
 .steps {
     /*(Obsolete with flexbox)
     text-align: center;*/
     background: #fce138;
 }
+/*(Obsolete with flexbox)
 .steps div {
     margin-bottom: 80px;
 }
@@ -192,17 +227,21 @@ header nav ul li a {
     width: 15%;
     margin: 10px 0;
 }
-.steps h3 {
-    color: #024e76;
-    font-size: 46px;
-    margin-top: 10px;
-}
-.steps p {
-    color: #39a6b2;
-    font-size: 23px;
-}
 .steps span {
     font-size: 38px;
+}*/
+
+.step h3 { /*flexbox update begins (renamed .steps/h3 to step/h3)*/
+    flex: 1 30%;
+    /*flexbox update ends*/
+    /*(Obsolete with flexbox)
+    margin-top: 10px;*/
+    color: #024e76;
+    font-size: 46px;
+}
+.step-text p { /*flexbox update (renamed .steps/p to step-text/p also changed font-size to 18px instead of 23px)*/
+    color: #39a6b2;
+    font-size: 18px;
 }
 .section-title {
     font-size: 55px;
