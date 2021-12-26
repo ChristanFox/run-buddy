@@ -12,3 +12,5 @@ https://christanfox.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Christan Fox
+
+### ©️2019 Run Buddy, Inc 
