@@ -27,8 +27,8 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    /*changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
-    display: inline; (Obsolete with flexbox)*/
+    /*(Obsolete with flexbox)changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
+    display: inline; */
 }
 
 header a {
@@ -38,22 +38,29 @@ header a {
 }
 
 header nav {
-    /*float dictates where on the page the text will be positioned
-    float: right; (Obsoloete with flexbox)*/
+    /*(Obsoloete with flexbox)float dictates where on the page the text will be positioned
+    float: right; */
     margin: 7px 0;
 }
 
-header nav ul li {
+/*flexbox update*/
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} /*flexbox update ends*/
+
+/*(obsolete with flexbox)header nav ul li {
     display: inline;
-}
+} */
 
 header nav ul li a {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    /*flexbox upadate (changed font-size from 22px to 1.55vw)*/
+    font-size: 1.55vw;
 }
 
 /*Hero Style Start*/
