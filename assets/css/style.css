@@ -10,10 +10,7 @@ body {
     color: #39a6b2;
 }
 header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 20px 35px;
     background-color: #39a6b2;
     /*flexbox update begins*/
     display: flex;
@@ -23,9 +20,9 @@ header {
 
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
     /*(Obsolete with flexbox)
     changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
     display: inline; */
@@ -96,12 +93,9 @@ header nav ul li a {
 }
 /*flexbox update ends*/
 .hero-form {
-    color: #024e76;
+    border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #024e76;
     /*flexbox update begins*/
     width: 40%;
     margin: 3.5%;
@@ -139,24 +133,6 @@ header nav ul li a {
     font-size: 16px;
 }
 /*Hero Style End*/
-
-
-.primary-border {
-   border-color: #fce138;    
-}
-.secondary-border {
-    border-color: #39a6b2;
-}
-.section-title {
-    font-size: 55px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    /*(Obsolete with flexbox)
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px; 
-    /*set "display" to "inline block" to shorten the line above "What we do"
-    display: inline-block;*/
-}
 
 
 /*WHAT WE DO STYLE BEGINS*/
@@ -385,18 +361,16 @@ header nav ul li a {
     font-size: 16px;
 }
 /*REACH OUT STYLE ENDS*/
-section {
-    padding: 60px;
-}
 
 footer {
     background: #fce138;
-    width: 100%;
     padding: 40px 35px;
     /*flexbox update begins*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /*flexbox update ends*/
+    width: 100%;
 }
 
 footer h2 {
@@ -417,6 +391,28 @@ footer div {
 footer a {
     color: #024e76;
 }
+
+
+.primary-border {
+   border-color: #fce138;    
+}
+.secondary-border {
+    border-color: #39a6b2;
+}
+section {
+    padding: 60px;
+}
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    /*(Obsolete with flexbox)
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px; 
+    /*set "display" to "inline block" to shorten the line above "What we do"
+    display: inline-block;*/
+}
+
 .red {
     color: red;
 }
