@@ -232,7 +232,13 @@ header nav ul li a {
     margin: 0 auto 35px auto;
     width: 50%;
     /*flexbox update ends*/
+    /*(Obsolete with flexbox)
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px; 
+    /*set "display" to "inline block" to shorten the line above "What we do"
+    display: inline-block;*/
 }
+
 /*WHAT YOU DO STYLE ENDS*/
 
 
@@ -401,16 +407,6 @@ footer a {
 }
 section {
     padding: 60px;
-}
-.section-title {
-    font-size: 55px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    /*(Obsolete with flexbox)
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px; 
-    /*set "display" to "inline block" to shorten the line above "What we do"
-    display: inline-block;*/
 }
 
 .red {
