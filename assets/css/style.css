@@ -10,8 +10,16 @@ body {
     color: #39a6b2;
 }
 header {
+    background-image: url("../images/hero-bg.jpg");
+    /*"background-size" and "background position are used to negate the clipping issue on the background image"*/
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: -webkit-sticky; /*Safari specific sticky functionality*/
+    position: sticky; /*An element that's sticky will behave relatively until the viewport scrolls past it.*/
+    top: 0; /*Then the element will switch to fixed and remain visible even as the user scrolls farther down.*/
     /*flexbox update begins*/
     display: flex;
     justify-content: space-between;
@@ -23,6 +31,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /*(Obsolete with flexbox)
     changing the display from the default setting to "inline" cleared room for the <nav> text go from under the the box to in it.
     display: inline; */
@@ -58,8 +67,16 @@ header nav ul li {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /*flexbox upadate (changed font-size from 22px to 1.55vw)*/
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /*Hero Style Start*/
@@ -67,7 +84,8 @@ header nav ul li a {
     background-image: url("../images/hero-bg.jpg");
     /*"background-size" and "background position are used to negate the clipping issue on the background image"*/
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
+    background-attachment: fixed;
     /*flexbox update begins*/
     display: flex;
     justify-content: center;
@@ -91,12 +109,15 @@ header nav ul li a {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /*flexbox update ends*/
 .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    border-radius: 15px; /*border radius is used to make the corners of the border curve*/
+    background-color: rgba(225, 225, 56, 0.8);
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /*flexbox update begins*/
     color: #024e76;
     width: 40%;
@@ -107,6 +128,10 @@ header nav ul li a {
     position: absolute;
     bottom: 120px;
     right: 140px;*/
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 .hero form h3 {
     font-size: 24px;
@@ -120,17 +145,24 @@ header nav ul li a {
 }
 .form-input {
     border: 1px solid #024e76;
+    border-radius: 15px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    background-color: rgba(225, 225, 225, 0.75);
+}
+.form-input:focus {
+    background-color: rgba(225, 225, 225, 1);
+    outline: none;
 }
 .hero-form button {
     color: #fce138;
     background-color: #024e76;
     border: none;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 16px;
 }
@@ -169,6 +201,12 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.step:last-child {
+    border-bottom: none;
+}
+.step:nth-child(even) {
+    border-bottom: 1px solid #39a6b2;
 }
 .step-img { /*without this step, CSS will refuse to render the images*/
     flex: 1 12%;
@@ -350,7 +388,9 @@ header nav ul li a {
 }
 /*flexbox update starts*/
 .contact-form input, .contact-form textarea { 
+    background-color: rgba(225, 225, 225, 0.75);
     border: 1px solid #024e76;
+    border-radius: 15px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
@@ -359,14 +399,23 @@ header nav ul li a {
     margin-bottom: 15px;
     margin-top: 5px;
 }
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(225, 225, 225, 1);
+    outline: none;
+} 
 .contact-form button {
     width: 100%;
     border: none;
+    border-radius: 15px;
     background: #fce138;
     color: #024e76;
     text-align: center;
     padding: 15px;
     font-size: 16px;
+}
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 /*REACH OUT STYLE ENDS*/
 
@@ -432,6 +481,7 @@ section {
     header {        
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     header h1 {
         width: 100%;
